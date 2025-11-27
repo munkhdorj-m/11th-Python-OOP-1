@@ -1,7 +1,7 @@
 {
     "tests": [
       {
-        "name": "Add and show",
+        "name": "Set and get",
         "setup": "sudo -H pip3 install -r requirements.txt",
         "run": "pytest test_assignment.py::test_add_and_show",
         "input": "",
@@ -11,7 +11,7 @@
         "points": 1
       },
       {
-        "name": "Search",
+        "name": "Invalid Grade",
         "run": "pytest test_assignment.py::test_search",
         "input": "",
         "output": "",
@@ -20,26 +20,8 @@
         "points": 1
       },
       {
-        "name": "Delete",
+        "name": "multiple updates",
         "run": "pytest test_assignment.py::test_delete",
-        "input": "",
-        "output": "",
-        "comparison": "included",
-        "timeout": 5,
-        "points": 1
-      },
-      {
-        "name": "Count",
-        "run": "pytest test_assignment.py::test_count",
-        "input": "",
-        "output": "",
-        "comparison": "included",
-        "timeout": 5,
-        "points": 1
-      },
-      {
-        "name": "Update",
-        "run": "pytest test_assignment.py::test_update",
         "input": "",
         "output": "",
         "comparison": "included",
