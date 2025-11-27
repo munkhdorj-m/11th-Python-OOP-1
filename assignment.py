@@ -3,7 +3,7 @@ class Student:
         self.name = name
         self.__grade = 0   # private attribute
 
-    def set_grade(self, val):
+    def set_grade(self, val): 
         # only allow values between 0 and 100
         if 0 <= val <= 100:
             self.__grade = val
