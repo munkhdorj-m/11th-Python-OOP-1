@@ -3,7 +3,7 @@
       {
         "name": "Set and get",
         "setup": "sudo -H pip3 install -r requirements.txt",
-        "run": "pytest test_assignment.py::test_add_and_show",
+        "run": "pytest test_assignment.py::test1",
         "input": "",
         "output": "",
         "comparison": "included",
@@ -12,7 +12,7 @@
       },
       {
         "name": "Invalid Grade",
-        "run": "pytest test_assignment.py::test_search",
+        "run": "pytest test_assignment.py::test2",
         "input": "",
         "output": "",
         "comparison": "included",
@@ -21,7 +21,7 @@
       },
       {
         "name": "multiple updates",
-        "run": "pytest test_assignment.py::test_delete",
+        "run": "pytest test_assignment.py::test3",
         "input": "",
         "output": "",
         "comparison": "included",
