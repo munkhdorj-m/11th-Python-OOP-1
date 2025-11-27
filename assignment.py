@@ -1,28 +1,14 @@
-class StudentNode:
-    def __init__(self, student_id, name):
-        self.id = student_id
+class Student:
+    def __init__(self, name):
         self.name = name
-        self.next = None
+        self.__grade = 0   # private attribute
 
+    def set_grade(self, val):
+        # only allow values between 0 and 100
+        if 0 <= val <= 100:
+            self.__grade = val
+        else:
+            self.__grade = 0   # reset to 0 if invalid
 
-class StudentList:
-    def __init__(self):
-        self.head = None
-
-    def add_student(self, student_id, name):
-        pass
-
-    def show_all(self):
-        pass
-
-    def search_student(self, student_id):
-        pass
-
-    def delete_student(self, student_id):
-        pass
-
-    def count_students(self):
-        pass
-
-    def update_student(self, student_id, new_name):
-        pass
+    def get_grade(self):
+        return self.__grade
