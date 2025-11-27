@@ -1,9 +1,8 @@
-# Abstract Data Types 3
+# Object Oriented Programming 1
 
-Abstract Data Types PDF:
+OOP PDF:
 
-https://drive.google.com/file/d/1jXGQdSvuUYjGXl-PUuHMUzKWEBGQoARL/view?usp=sharing
-
+https://drive.google.com/drive/folders/1V9L54sGRVtGork9DONvOaFZq5krgh9TB?usp=sharing
 
 ---
 
@@ -11,51 +10,26 @@ https://drive.google.com/file/d/1jXGQdSvuUYjGXl-PUuHMUzKWEBGQoARL/view?usp=shari
 
 **Problem:**
  
-**Student Management System (Linked List):**    
-Implement a Student Management System **using Linked List**, not Python lists.
+**Student Grades (Encapsulation):**  
+Create a Student class where the grade is private and safe from incorrect modification.  
 
-You will create:
-- A `StudentNode` class. `StudentNode` contains `id` and `name`   
-- A `StudentList` (Linked List) class    
-
-Your linked list must support:   
-1. **add_student(id, name)**    
-   Insert at the *end* of the linked list.  
-  
-2. **delete_student(id)**    
-   Remove the student with matching ID.    
-   Return `True` if found & deleted, else `False`.  
-    
-3. **search_student(id)**    
-   Return the student’s name if found, else `False`.  
-  
-4. **show_all()**    
-   Return all students in this format:
-   
-       1 - Alice
-       2 - Bob
-
-Bonus points for:
-1. `count_students()`:   
-    Returns the total number of students currently in the linked list.    
-       
-2. `update_student(id, new_name)`:  
-    Searches for a student by their id.   
-    If found, updates the student's name to new_name.   
-    
+Requirements:   
+-Private attribute: `__grade`  
+-Public methods:   
+    `set_grade(val)`  
+         Must be 0–100  
+    `get_grade()`  
+Public attribute: `name`   
 
 Example:
 
     Input:
-       ll = StudentLinkedList()
-       ll.add_student(1, "Alice")
-       ll.add_student(2, "Bob")
-       ll.add_student(3, "Charlie")
-       ll.delete_student(2)
-       print(ll.show_all())
+       s = Student("Bob")
+       s.set_grade(85)
+       print(s.get_grade())
+
     Output:
-       1 - Alice
-       3 - Charlie
+       85
 
       
 
