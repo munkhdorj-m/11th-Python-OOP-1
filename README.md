@@ -14,11 +14,13 @@ https://drive.google.com/file/d/1Dfu8jYSOsRFwReeNXO6nA0ffTYqtH2BT/view?usp=shari
 Create a Student class where the grade is private and safe from incorrect modification.  
 
 Requirements:   
--Private attribute: `__grade`  
+-Private attribute: 
+* `__grade`  
 -Public methods:   
-&nbsp;&nbsp;&nbsp;&nbsp;`set_grade(val)` - Must be 0–100  
-&nbsp;&nbsp;&nbsp;&nbsp;`get_grade()`      
--Public attribute: `name`   
+* `set_grade(val)` - Must be 0–100  
+* `get_grade()`      
+-Public attribute:
+* `name`   
 
 Example:
 
@@ -35,8 +37,6 @@ Example:
 ## Exercise 2
 
 **Problem:**
- 
-**Student Grades (Encapsulation):**  
 Create a BankAccount class that safely manages deposits and withdrawals using encapsulation.
 
 Requirements:  
