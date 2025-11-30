@@ -1,5 +1,5 @@
 import pytest
-from assignment import Student,BankAccount
+from assignment import Student,TemperatureSensor
 
 def test1():
     s = Student("Bob")
@@ -12,12 +12,16 @@ def test1():
     assert s.name == "Bob"
 
 def test2():
-    acc = BankAccount("Alice", 100)
-    acc.deposit(50)
-    assert acc.get_balance() == 150
-    acc.withdraw(30)
-    assert acc.get_balance() == 120
-    acc.withdraw(200)
-    assert acc.get_balance() == 120
-    acc.deposit(-10)
-    assert acc.get_balance() == 120
+    s = TemperatureSensor("Lab")
+    s.set_temperature(20)
+    assert s.get_temperature() == 20
+    s.set_temperature(999)
+    assert s.get_temperature() == 20
+    s.increase(10)
+    assert s.get_temperature() == 30
+    s.increase(200)
+    assert s.get_temperature() == 150
+    s.decrease(50)
+    assert s.get_temperature() == 100
+    s.decrease(500)
+    assert s.get_temperature() == -50
