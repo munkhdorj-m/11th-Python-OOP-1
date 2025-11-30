@@ -67,10 +67,8 @@ Example:
         acc.deposit(200)
         acc.withdraw(50)
         acc.withdraw(500)  # not enough money
-        
         print(acc.get_balance())
-
-
+        
     Output:
         150
 
