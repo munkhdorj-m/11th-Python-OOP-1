@@ -1,4 +1,4 @@
-# Object Oriented Programming 1
+# Object Oriented Programming (Encapsulation)
 
 OOP PDF:
 
@@ -42,35 +42,42 @@ Example:
 ## Exercise 2
 
 **Problem:**
-Create a BankAccount class that safely manages deposits and withdrawals using encapsulation.
+Create a class `TemperatureSensor` that simulates reading and updating temperature values safely.
 
 Requirements:  
 
 Private attribute: 
-* `__balance` (starts at 0).
+* `__temperature`
 
 Public methods:   
-* `deposit(amount)`  
-    * Add amount to balance.
-    * Ignore invalid (negative or zero) amounts
-* `get_grade()` 
-    * Subtract amount from balance
-    * Only allow if balance is enough
-    * If not enough → do nothing
-* `get_balance()`
-    * Return current balance
+* `set_temperature(value)`  
+    * Accepts only values between –50°C to 150°C
+    * If the value is invalid, ignore it
+* `get_temperature()` 
+    * Returns the current temperature
+* `increase(amount)`
+    * Increase temperature
+    * Must respect the –50 to 150 range
+* `decrease(amount)`
+    * Decrease temperature
+    * Also must respect the range
+
+Public attribute: 
+* `location` (e.g., "Server Room")
 
 Example:
 
     Input:
-        acc = BankAccount()
-        acc.deposit(200)
-        acc.withdraw(50)
-        acc.withdraw(500)  # not enough money
-        print(acc.get_balance())
-        
+         sensor = TemperatureSensor("Server Room")
+         sensor.set_temperature(25)
+         sensor.increase(10)
+         print(sensor.get_temperature())   # 35
+         sensor.decrease(100)
+         print(sensor.get_temperature())   # -50 (min limit)
+
     Output:
-        150
+        35
+        -50
 
 ---
 
