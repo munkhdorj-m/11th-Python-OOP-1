@@ -1,3 +1,4 @@
+# Exercise 1
 class Student:
     def __init__(self, name):
         self.name = name
@@ -12,3 +13,20 @@ class Student:
 
     def get_grade(self):
         return self.__grade
+
+# Exercise 2
+class BankAccount:
+    def __init__(self, owner, balance):
+        self.owner = owner
+        self.__balance = balance   # private
+
+    def deposit(self, amount):
+        if amount > 0:
+            self.__balance += amount
+
+    def withdraw(self, amount):
+        if amount > 0 and amount <= self.__balance:
+            self.__balance -= amount
+
+    def get_balance(self):
+        return self.__balance
