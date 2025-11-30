@@ -2,7 +2,7 @@
 
 OOP PDF:
 
-https://drive.google.com/drive/folders/1V9L54sGRVtGork9DONvOaFZq5krgh9TB?usp=sharing
+https://drive.google.com/file/d/1Dfu8jYSOsRFwReeNXO6nA0ffTYqtH2BT/view?usp=sharing
 
 ---
 
