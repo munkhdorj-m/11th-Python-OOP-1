@@ -47,24 +47,27 @@ Private attribute:
 Public methods:   
 * `deposit(amount)`  
     * Add amount to balance.
-    * Ignore invalid (negative or zero) amounts  ⋅⋅
+    * Ignore invalid (negative or zero) amounts
 * `get_grade()` 
     * Subtract amount from balance
     * Only allow if balance is enough
     * If not enough → do nothing
 * `get_balance()`
     * Return current balance
--Public attribute: `name`   
 
 Example:
 
     Input:
-       s = Student("Bob")
-       s.set_grade(85)
-       print(s.get_grade())
+        acc = BankAccount()
+        acc.deposit(200)
+        acc.withdraw(50)
+        acc.withdraw(500)  # not enough money
+        
+        print(acc.get_balance())
+
 
     Output:
-       85
-  
+        150
+
 ---
 
