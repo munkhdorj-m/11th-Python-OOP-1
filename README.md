@@ -16,7 +16,8 @@ Create a Student class where the grade is private and safe from incorrect modifi
 Requirements:   
 Private attribute: 
 
-* `__grade`  
+* `__grade`
+  
 Public methods:
 
 * `set_grade(val)` - Must be 0–100  
