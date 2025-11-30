@@ -20,13 +20,34 @@ class TemperatureSensor:
         self.name = name
         self.__temperature = 0  # private attribute
 
-    def set_temperature(self, temp):
-        # Only allow realistic temperatures between -50 and 150 Celsius
-        if -50 <= temp <= 150:
-            self.__temperature = temp
-        else:
-            self.__temperature = 0  # default if invalid
+    def set_temperature(self, value):
+        """Set temperature only if value is between -50 and 150"""
+        if -50 <= value <= 150:
+            self.__temperature = value
+        # else ignore invalid values
 
     def get_temperature(self):
+        """Return current temperature"""
         return self.__temperature
+
+    def increase(self, amount):
+        """Increase temperature but not above 150"""
+        new_temp = self.__temperature + amount
+        if new_temp > 150:
+            self.__temperature = 150
+        elif new_temp < -50:
+            self.__temperature = -50
+        else:
+            self.__temperature = new_temp
+
+    def decrease(self, amount):
+        """Decrease temperature but not below -50"""
+        new_temp = self.__temperature - amount
+        if new_temp < -50:
+            self.__temperature = -50
+        elif new_temp > 150:
+            self.__temperature = 150
+        else:
+            self.__temperature = new_temp
+
 
