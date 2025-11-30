@@ -43,18 +43,15 @@ Requirements:
 Private attribute: 
 * `__balance` (starts at 0).
 Public methods:   
-* `deposit(amount)`
-  
-Add amount to balance.
-
-⋅⋅ Ignore invalid (negative or zero) amounts  ⋅⋅
-
+* `deposit(amount)`  
+ * Add amount to balance.
+ * Ignore invalid (negative or zero) amounts  ⋅⋅
 * `get_grade()` 
-⋅⋅⋅⋅* Subtract amount from balance
-⋅⋅⋅⋅* Only allow if balance is enough
-⋅⋅⋅⋅* If not enough → do nothing
+ * Subtract amount from balance
+ * Only allow if balance is enough
+ * If not enough → do nothing
 * `get_balance()`
-....* Return current balance
+ * Return current balance
 -Public attribute: `name`   
 
 Example:
