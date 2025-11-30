@@ -45,9 +45,9 @@ Private attribute:
 Public methods:   
 * `deposit(amount)`
   
-...* Add amount to balance.
+Add amount to balance.
 
-⋅⋅⋅⋅* Ignore invalid (negative or zero) amounts  
+⋅⋅ Ignore invalid (negative or zero) amounts  ⋅⋅
 
 * `get_grade()` 
 ⋅⋅⋅⋅* Subtract amount from balance
