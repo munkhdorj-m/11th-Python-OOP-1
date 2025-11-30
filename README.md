@@ -41,9 +41,9 @@ Create a BankAccount class that safely manages deposits and withdrawals using en
 
 Requirements:   
 Private attribute: 
-* `__balance` (starts at 0)
+* `__balance` (starts at 0).
 Public methods:   
-* `deposit(amount)`
+* `deposit(amount)`   
 ⋅⋅⋅⋅* Add amount to balance.
 ⋅⋅⋅⋅* Ignore invalid (negative or zero) amounts  
 * `get_grade()` 
