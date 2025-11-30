@@ -39,7 +39,7 @@ Example:
 **Student Grades (Encapsulation):**  
 Create a BankAccount class that safely manages deposits and withdrawals using encapsulation.
 
-***Requirements:  
+Requirements:  
 
 Private attribute: 
 * `__balance` (starts at 0).
