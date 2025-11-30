@@ -15,18 +15,18 @@ class Student:
         return self.__grade
 
 # Exercise 2
-class BankAccount:
-    def __init__(self, owner, balance):
-        self.owner = owner
-        self.__balance = balance   # private
+class TemperatureSensor:
+    def __init__(self, name):
+        self.name = name
+        self.__temperature = 0  # private attribute
 
-    def deposit(self, amount):
-        if amount > 0:
-            self.__balance += amount
+    def set_temperature(self, temp):
+        # Only allow realistic temperatures between -50 and 150 Celsius
+        if -50 <= temp <= 150:
+            self.__temperature = temp
+        else:
+            self.__temperature = 0  # default if invalid
 
-    def withdraw(self, amount):
-        if amount > 0 and amount <= self.__balance:
-            self.__balance -= amount
+    def get_temperature(self):
+        return self.__temperature
 
-    def get_balance(self):
-        return self.__balance
