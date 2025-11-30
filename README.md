@@ -14,12 +14,16 @@ https://drive.google.com/file/d/1Dfu8jYSOsRFwReeNXO6nA0ffTYqtH2BT/view?usp=shari
 Create a Student class where the grade is private and safe from incorrect modification.  
 
 Requirements:   
--Private attribute: 
+Private attribute: 
+
 * `__grade`  
--Public methods:   
+Public methods:
+
 * `set_grade(val)` - Must be 0–100  
-* `get_grade()`      
--Public attribute:
+* `get_grade()`
+  
+Public attribute:
+
 * `name`   
 
 Example:
